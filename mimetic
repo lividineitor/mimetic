@@ -1,0 +1,69 @@
+# Administra todos los tipos de archivos de temas en Linux
+
+# Variables globales
+
+MYTHEMES="./themes"
+MYSCRIPTS="./scripts"
+MYPALETTES="./palettes"
+
+LOCALTHEMES="${HOME}/.themes"
+
+# Tema virtual global
+THEMEROUTE="${HOME}/.themes/mimetic"
+
+PALETTE="palette.decob"
+THEME=""
+TO=""
+FROM=""
+ARGS=""
+
+# Presentación
+
+# Negocio
+
+# Datos
+
+
+# Funciones
+
+applyPalette () {
+
+    cp ${MYTHEMES}/${THEME}/${FROM} ${THEMEROUTE}/${FROM}
+
+    while read nombre valor
+    do
+
+        sed -i "s/${nombre}/${valor}/g" ${THEMEROUTE}/${FROM}
+
+    done < $PALETTE
+
+}
+
+while read nombre valor
+do
+
+    case $nombre in
+
+        PALETTE)
+            rm -f $PALETTE
+            ln -s ${MYPALETTES}/${valor} $PALETTE
+        ;;
+
+        THEME)
+            THEME="${valor}"
+        ;;
+
+        FROM)
+            FROM="${valor}"
+            applyPalette
+        ;;
+
+        SET)
+            ${MYSCRIPTS}/${valor} "${ARGS}"
+        ;;
+
+        *)
+        ;;
+
+    esac
+done < .mimeticrc

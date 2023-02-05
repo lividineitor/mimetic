@@ -1,0 +1,60 @@
+#define BLACK   @BLACK
+#define RED     @RED
+#define GREEN   @GREEN
+#define YELLOW  @YELLOW
+#define BLUE    @BLUE
+#define MAGENTA @MAGENTA
+#define CYAN    @CYAN
+#define WHITE   @WHITE
+
+#define BBLACK  @BBLACK
+
+xterm*background: @BG
+xterm*foreground: @FG
+
+*faceName: Monospace
+*faceSize: 12pt
+*altSendEscape: true
+*altIsNotMeta: true
+
+! Black
+
+xterm*color0: #BLACK
+xterm*color8: #BBLACK
+
+! Red
+
+xterm*color1: RED
+xterm*color9: RED
+
+! Green
+
+xterm*color2: GREEN
+xterm*color10: GREEN
+
+! Yellow
+
+xterm*color3: YELLOW
+xterm*color11: YELLOW
+
+! Blue
+
+xterm*color4: BLUE
+xterm*color12: BLUE
+
+! Magenta
+
+xterm*color5: MAGENTA
+xterm*color13: MAGENTA
+
+! Cyan
+
+xterm*color6: CYAN
+xterm*color14: CYAN
+
+! White
+
+xterm*color7: WHITE
+xterm*color15: WHITE
+
+XTerm*metaSendsEscape: true

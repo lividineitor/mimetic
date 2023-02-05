@@ -1,0 +1,138 @@
+gtk-color-scheme = "gris30:@BLACK\ngris40:#404040\ngris60:#606060\ngris80:#808080\nblack:#000000\nred:@RED\ngreen:#00ff80\nyellow:#ffc080\nwhite:@WHITE"
+
+style "murrine-default" {
+
+    bg [ACTIVE] = @white
+    bg [INSENSITIVE] = @gris60
+    bg [NORMAL] = @gris40
+    bg [PRELIGHT] = @gris60
+    bg [SELECTED] = @gris60
+
+
+    fg [ACTIVE] = @white
+    fg [INSENSITIVE] = @gris60
+    fg [NORMAL] = @white
+    fg [PRELIGHT] = @white
+    fg [SELECTED] = @red
+
+
+    base [ACTIVE] = @white
+    base [INSENSITIVE] = @gris60
+    base [NORMAL] = @gris30
+    base [PRELIGHT] = @gris60
+    base [SELECTED] = @red
+
+
+    text [ACTIVE] = @gris40
+    text [INSENSITIVE] = @gris30
+    text [NORMAL] = @white
+    text [PRELIGHT] = @white
+    text [SELECTED] = @gris40
+
+    engine "murrine" {
+        contrast = 0.0      # define el "contraste" de los bordes. En 0 no hay bordes entre widgets
+    }
+    
+}
+
+style "container" {
+
+    bg [ACTIVE] = @gris60
+	bg [NORMAL] = @gris40
+
+	fg [NORMAL] = @white
+
+    base [NORMAL] = @gris60
+
+    engine "murrine" {
+    }
+
+}
+
+style "notebook" {
+
+	bg [NORMAL] = @gris30
+    bg [SELECTED] = @white
+	
+    fg [ACTIVE] = @white
+    fg [NORMAL] = @white
+
+    base [NORMAL] = @gris30
+
+    engine "murrine" {
+    }
+
+}
+
+style "button" {
+
+    bg [ACTIVE] = @white
+    bg [INSENSITIVE] = @gris60
+    bg [NORMAL] = @gris60
+    bg [PRELIGHT] = @gris80
+    bg [SELECTED] = @gris80
+
+    engine "murrine" {
+        roundness = 0
+    }
+
+}
+
+style "button_text" {
+
+    fg [ACTIVE] = @gris40
+    fg [INSENSITIVE] = @gris30
+    fg [NORMAL] = @white
+    fg [PRELIGHT] = @white
+    fg [SELECTED] = @red
+
+    engine "murrine" {
+    }
+}
+
+style "paned" {
+
+    bg [ACTIVE] = @red
+    bg [INSENSITIVE] = @red
+    bg [NORMAL] = @red
+    bg [PRELIGHT] = @red
+    bg [SELECTED] = @red
+
+
+    fg [ACTIVE] = @red
+    fg [INSENSITIVE] = @red
+    fg [NORMAL] = @red
+    fg [PRELIGHT] = @red
+    fg [SELECTED] = @red
+
+
+    base [ACTIVE] = @red
+    base [INSENSITIVE] = @red
+    base [NORMAL] = @red
+    base [PRELIGHT] = @red
+    base [SELECTED] = @red
+
+
+    text [ACTIVE] = @red
+    text [INSENSITIVE] = @red
+    text [NORMAL] = @red
+    text [PRELIGHT] = @red
+    text [SELECTED] = @red
+
+    engine "murrine"{
+    }
+
+}
+
+# Asignación de todos los elementos con sus estilos
+
+class "GtkWidget" style "murrine-default"
+
+class "GtkContainer" style "container"
+
+widget_class "*.GtkNotebook.*" style "notebook"
+
+class "GtkButton" style "button"
+widget_class "*.GtkButton.*" style "button_text"
+
+#widget_class "*.GtkStatusbar.*" style "paned"

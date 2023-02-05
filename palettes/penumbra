@@ -1,0 +1,17 @@
+@FG #f3f3f3
+@BG #3f3f3f
+@SELECTED #ff3f7f
+@NORMAL #5f5f5f
+@INSENSITIVE #808080
+@VALID #bfff7f
+@INVALID #ff3f7f
+@ALERT #ffbf7f
+@BLACK   #3f3F3F
+@RED     #ff3f7f
+@GREEN   #bfff7f
+@YELLOW  #ffbf7f
+@BLUE    #00bfff
+@MAGENTA #bf7fff
+@CYAN    #bfffff
+@WHITE   #ffffff
+@BBLACK  #5F5F5F

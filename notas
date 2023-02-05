@@ -1,0 +1,10 @@
+- definir cómo encotrar el archivo de origen FROM
+- definir el script de instalación (de existir) INSTALL
+
+posibles argumentos
+
+únicamente modifica la paleta de colores
+- definir archivo de paleta PALLETTE (-p --pallette= )
+
+elige el tema y modifica la paleta
+- definir archivo de tema THEME ( -t --theme )

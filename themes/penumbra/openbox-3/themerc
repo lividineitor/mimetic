@@ -1,0 +1,139 @@
+!# Penumbra
+!# Desarrollado por hardnipple
+
+# Fonts
+# these are really halos, but who cares?
+
+*.font: shadow=n
+window.active.label.text.font:shadow=n:shadowtint=30:shadowoffset=1
+window.inactive.label.text.font:shadow=y:shadowtint=00:shadowoffset=0
+menu.items.font:shadow=y:shadowtint=0:shadowoffset=1
+
+!# general stuff
+
+border.width: 1
+padding.width: 3
+padding.height: 2
+window.handle.width: 4
+window.client.padding.width: 0
+menu.overlap: 2
+*.justify: center
+
+!# lets set our damn shadows here, eh?
+
+*.bg.highlight: 0
+*.bg.shadow:    0
+
+window.active.title.bg.highlight: 0
+window.active.title.bg.shadow:    0
+
+window.inactive.title.bg.highlight: 0
+window.inactive.title.bg.shadow:    0
+
+window.*.grip.bg.highlight: 0
+window.*.grip.bg.shadow:    0
+
+window.*.handle.bg.highlight: 0
+window.*.handle.bg.shadow:    0
+
+!# Menu settings
+
+menu.border.color: @NORMAL
+menu.border.width: 1
+
+menu.title.bg: solid flat
+menu.title.bg.color: @BG
+menu.title.text.color: @FG
+
+menu.items.bg: Flat Solid
+menu.items.bg.color: @BG
+menu.items.text.color: #808080
+menu.items.disabled.text.color: @NORMAL
+
+menu.items.active.bg: Flat Solid
+menu.items.active.bg.color: @BG
+menu.items.active.text.color: @SELECTED
+
+menu.separator.width: 1
+menu.separator.padding.width: 8
+menu.separator.padding.height: 3
+menu.separator.color: @NORMAL
+
+!# set handles here and only the once?
+
+window.*.handle.bg: Flat Solid
+window.*.handle.bg.color: @NORMAL
+
+window.*.grip.bg: Flat Solid
+window.*.grip.bg.color: @SELECTED
+
+!# Active
+
+window.*.border.color: @NORMAL
+
+window.active.title.separator.color: @BG
+
+*.title.bg: solid flat
+*.title.bg.color: @BG
+
+window.active.label.bg: Parentrelative
+window.active.label.text.color: @FG
+
+window.active.button.*.bg: Flat Solid
+
+window.active.button.*.bg.color: @BG
+
+!# ----------------------------------------------------------
+window.active.button.hover.bg.color: @ALERT
+window.active.button.hover.bg.border.color: #4A658C
+
+window.active.button.pressed.bg: Flat solid Border
+window.active.button.pressed.bg.color: @SELECTED
+
+window.active.button.hover.bg.border.color: #4A658C
+!# ----------------------------------------------------------
+
+!# inactive
+
+window.inactive.title.separator.color: @BG
+
+window.inactive.title.bg: Flat Solid
+window.inactive.title.bg.color: @BG
+
+window.inactive.label.bg: Parentrelative
+window.inactive.label.text.color: @INSENSITIVE
+
+window.inactive.button.*.bg: Flat Solid
+window.inactive.button.*.bg.color: @BG
+
+
+!# window button images
+
+window.active.button.close.*.image.color: @INVALID
+window.active.button.max.*.image.color: @ALERT
+window.active.button.iconify.*.image.color: @VALID
+
+window.inactive.button.*.*.image.color: @NORMAL
+
+
+
+!# osd (pop ups and what not, dock?)
+
+osd.border.width: 1
+osd.border.color: @NORMAL
+
+osd.bg: flat solid
+osd.bg.color: @BG
+
+osd.active.label.bg: parentrelative
+osd.active.label.bg.color: @FG
+osd.active.label.text.color: @ALERT
+
+osd.inactive.label.bg: parentrelative
+osd.inactive.label.text.color: @NORMAL
+
+!# yeah whatever, this is fine anyhoo?
+osd.hilight.bg: flat solid
+osd.hilight.bg.color: @ALERT
+osd.unhilight.bg: flat solid
+osd.unhilight.bg.color: @NORMAL
