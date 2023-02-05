@@ -1,0 +1,12 @@
+PALETTE penumbra
+
+THEME penumbra
+
+
+FROM .Xresources
+SET xresources.sh
+
+FROM openbox-3/themerc
+
+FROM gtk-2.0/gtkrc
+SET gtk2.sh
